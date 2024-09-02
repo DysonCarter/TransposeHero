@@ -4,18 +4,19 @@ body {
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-size: 1rem;
 }
 
 header {
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -31,7 +32,9 @@ label {
 }
 
 select {
-    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
     padding: 5px;
     font-size: 1rem;
     border-radius: 4px;
@@ -50,7 +53,8 @@ h3 {
 }
 
 table {
-    width: auto;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     border-collapse: collapse;
 }
@@ -59,6 +63,7 @@ td {
     padding: 10px 15px;
     border: 1px solid #ddd;
     font-weight: bolder;
+    text-align: center;
 }
 
 /* Chord Styles */
@@ -73,4 +78,44 @@ td {
 #result {
     color: #007BFF;
     font-weight: bold;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    hr {
+        max-width: 90%;
+        margin: 10px 0;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    select {
+        margin: 5px 0;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    td {
+        padding: 5px 8px;
+    }
+
+    #results {
+        margin-top: 10px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
 }
